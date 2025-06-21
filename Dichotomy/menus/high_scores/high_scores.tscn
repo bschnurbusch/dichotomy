@@ -1,0 +1,230 @@
+[gd_scene load_steps=7 format=3 uid="uid://s88wu86m5iff"]
+
+[ext_resource type="Texture2D" uid="uid://dcamwty5envgy" path="res://art_assets/high_scores_menu_text/high_scores_menu_text.png" id="1_vqnu3"]
+[ext_resource type="Script" path="res://menus/high_scores/high_scores.gd" id="1_xcb1f"]
+[ext_resource type="Texture2D" uid="uid://c5yn5ani81c23" path="res://art_assets/back_arrow/back_arrow.png" id="3_u7ta1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xmgo3"]
+font_size = 14
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0btit"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t1lry"]
+
+[node name="HighScores" type="Node2D"]
+script = ExtResource("1_xcb1f")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 320.0
+offset_bottom = 480.0
+
+[node name="HighScoresMenuText" type="Sprite2D" parent="."]
+position = Vector2(160, 34)
+texture = ExtResource("1_vqnu3")
+
+[node name="HighScore1" type="Node2D" parent="."]
+
+[node name="HighScore1Background" type="ColorRect" parent="HighScore1"]
+offset_left = 92.0
+offset_top = 66.0
+offset_right = 228.0
+offset_bottom = 102.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="HighScore1"]
+offset_left = 92.0
+offset_top = 66.0
+offset_right = 228.0
+offset_bottom = 102.0
+text = "Score 1"
+label_settings = SubResource("LabelSettings_xmgo3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScore2" type="Node2D" parent="."]
+
+[node name="HighScore2Background" type="ColorRect" parent="HighScore2"]
+offset_left = 92.0
+offset_top = 106.0
+offset_right = 228.0
+offset_bottom = 142.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label2" type="Label" parent="HighScore2"]
+offset_left = 92.0
+offset_top = 106.0
+offset_right = 228.0
+offset_bottom = 142.0
+text = "Score 2"
+label_settings = SubResource("LabelSettings_xmgo3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScore3" type="Node2D" parent="."]
+
+[node name="HighScore3Background" type="ColorRect" parent="HighScore3"]
+offset_left = 92.0
+offset_top = 146.0
+offset_right = 228.0
+offset_bottom = 182.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label3" type="Label" parent="HighScore3"]
+offset_left = 92.0
+offset_top = 146.0
+offset_right = 228.0
+offset_bottom = 182.0
+text = "Score 3"
+label_settings = SubResource("LabelSettings_xmgo3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScore4" type="Node2D" parent="."]
+
+[node name="HighScore4Background" type="ColorRect" parent="HighScore4"]
+offset_left = 92.0
+offset_top = 186.0
+offset_right = 228.0
+offset_bottom = 222.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label4" type="Label" parent="HighScore4"]
+offset_left = 92.0
+offset_top = 186.0
+offset_right = 228.0
+offset_bottom = 222.0
+text = "Score 4"
+label_settings = SubResource("LabelSettings_xmgo3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScore5" type="Node2D" parent="."]
+
+[node name="HighScore5Background" type="ColorRect" parent="HighScore5"]
+offset_left = 92.0
+offset_top = 226.0
+offset_right = 228.0
+offset_bottom = 262.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label5" type="Label" parent="HighScore5"]
+offset_left = 92.0
+offset_top = 226.0
+offset_right = 228.0
+offset_bottom = 262.0
+text = "Score 5"
+label_settings = SubResource("LabelSettings_xmgo3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScore6" type="Node2D" parent="."]
+
+[node name="HighScore6Background" type="ColorRect" parent="HighScore6"]
+offset_left = 92.0
+offset_top = 266.0
+offset_right = 228.0
+offset_bottom = 302.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label6" type="Label" parent="HighScore6"]
+offset_left = 92.0
+offset_top = 266.0
+offset_right = 228.0
+offset_bottom = 302.0
+text = "Score 6"
+label_settings = SubResource("LabelSettings_xmgo3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScore7" type="Node2D" parent="."]
+
+[node name="HighScore7Background" type="ColorRect" parent="HighScore7"]
+offset_left = 92.0
+offset_top = 306.0
+offset_right = 228.0
+offset_bottom = 342.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label7" type="Label" parent="HighScore7"]
+offset_left = 92.0
+offset_top = 306.0
+offset_right = 228.0
+offset_bottom = 342.0
+text = "Score 7"
+label_settings = SubResource("LabelSettings_xmgo3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScore8" type="Node2D" parent="."]
+
+[node name="HighScore8Background" type="ColorRect" parent="HighScore8"]
+offset_left = 92.0
+offset_top = 346.0
+offset_right = 228.0
+offset_bottom = 382.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label8" type="Label" parent="HighScore8"]
+offset_left = 92.0
+offset_top = 346.0
+offset_right = 228.0
+offset_bottom = 382.0
+text = "Score 8"
+label_settings = SubResource("LabelSettings_xmgo3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScore9" type="Node2D" parent="."]
+
+[node name="HighScore9Background" type="ColorRect" parent="HighScore9"]
+offset_left = 92.0
+offset_top = 386.0
+offset_right = 228.0
+offset_bottom = 422.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label9" type="Label" parent="HighScore9"]
+offset_left = 92.0
+offset_top = 386.0
+offset_right = 228.0
+offset_bottom = 422.0
+text = "Score 9"
+label_settings = SubResource("LabelSettings_xmgo3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighScore10" type="Node2D" parent="."]
+
+[node name="HighScore10Background" type="ColorRect" parent="HighScore10"]
+offset_left = 92.0
+offset_top = 426.0
+offset_right = 228.0
+offset_bottom = 462.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label10" type="Label" parent="HighScore10"]
+offset_left = 92.0
+offset_top = 426.0
+offset_right = 228.0
+offset_bottom = 462.0
+text = "Score 10"
+label_settings = SubResource("LabelSettings_xmgo3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackArrow" type="Node2D" parent="."]
+
+[node name="BackArrowIcon" type="Sprite2D" parent="BackArrow"]
+position = Vector2(285, 444)
+texture = ExtResource("3_u7ta1")
+
+[node name="Button" type="Button" parent="BackArrow"]
+offset_left = 265.0
+offset_top = 428.0
+offset_right = 309.0
+offset_bottom = 463.0
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0btit")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_t1lry")
+flat = true
+
+[connection signal="pressed" from="BackArrow/Button" to="." method="_on_button_pressed"]
