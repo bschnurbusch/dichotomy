@@ -1,6 +1,12 @@
 # Godot 4+ specific ignores
 .godot/
+*.translation
 android
 Dichotomy.aab
 Dichotomy.apk
+*.aab
+*.apk
 export_presets.cfg
+*.keystore
+*.jks
+*.txt

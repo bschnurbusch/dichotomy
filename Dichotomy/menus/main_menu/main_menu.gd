@@ -41,6 +41,7 @@ func remove():
 		GameController.spawn_locations["right"] = GameController.game_width - GameController.game_block_spawn_width
 		
 		new_game_block = game_block.instantiate()
+		new_game_block.position.x = GameController.spawn_locations[GameController.spawn_side]
 		GameController.switch_spawn_sides()
 		get_parent().add_child(new_game_block)
 		

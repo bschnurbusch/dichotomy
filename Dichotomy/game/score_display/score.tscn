@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bcrns8dkfypwy"]
 
-[ext_resource type="Script" path="res://game/score_display/score.gd" id="1_mdcac"]
+[ext_resource type="Script" uid="uid://cp881p0tmfxdi" path="res://game/score_display/score.gd" id="1_mdcac"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_23npe"]
 font_size = 48
@@ -12,8 +12,9 @@ z_index = 2
 script = ExtResource("1_mdcac")
 
 [node name="Label" type="Label" parent="."]
+offset_top = 11.0
 offset_right = 320.0
-offset_bottom = 70.0
+offset_bottom = 81.0
 text = "Score: ##"
 label_settings = SubResource("LabelSettings_23npe")
 horizontal_alignment = 1

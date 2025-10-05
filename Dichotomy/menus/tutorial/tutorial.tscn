@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://bjpbq4psr34ar"]
 
-[ext_resource type="Script" path="res://menus/tutorial/tutorial.gd" id="1_d1bui"]
+[ext_resource type="Script" uid="uid://7wb8f8jumugp" path="res://menus/tutorial/tutorial.gd" id="1_d1bui"]
+[ext_resource type="Texture2D" uid="uid://ck1wia2hfmtxl" path="res://art_assets/tutorial_menu_text/tutorial_menu_text_alt.png" id="3_f2t2n"]
 [ext_resource type="Texture2D" uid="uid://c5yn5ani81c23" path="res://art_assets/back_arrow/back_arrow.png" id="3_u0w7e"]
-[ext_resource type="Texture2D" uid="uid://i3o41xvg1ge1" path="res://art_assets/tutorial_menu_text/tutorial_menu_text.png" id="4_05bum"]
+[ext_resource type="Texture2D" uid="uid://5v5itcdycnk8" path="res://art_assets/tutorial_help_text/tutorial_help_text_alt.png" id="5_knmh5"]
 [ext_resource type="Texture2D" uid="uid://dgr8aqxxn3ksm" path="res://art_assets/arrow/arrow.png" id="5_wberp"]
-[ext_resource type="Texture2D" uid="uid://dwjok7toed5a" path="res://art_assets/tutorial_help_text/tutorial_help_text.png" id="6_tr6es"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_cvq04"]
 font_size = 48
@@ -23,9 +23,9 @@ offset_right = 320.0
 offset_bottom = 480.0
 
 [node name="Label" type="Label" parent="."]
-offset_top = 69.0
+offset_top = 71.0
 offset_right = 320.0
-offset_bottom = 139.0
+offset_bottom = 141.0
 text = "Score: 3"
 label_settings = SubResource("LabelSettings_cvq04")
 horizontal_alignment = 1
@@ -47,8 +47,8 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_7rxn1")
 flat = true
 
 [node name="TutorialMenuText" type="Sprite2D" parent="."]
-position = Vector2(160, 34)
-texture = ExtResource("4_05bum")
+position = Vector2(160, 49)
+texture = ExtResource("3_f2t2n")
 
 [node name="Arrow" type="Sprite2D" parent="."]
 position = Vector2(39, 312)
@@ -56,8 +56,8 @@ scale = Vector2(-1, -1)
 texture = ExtResource("5_wberp")
 
 [node name="TutorialHelpText" type="Sprite2D" parent="."]
-position = Vector2(164, 251)
-texture = ExtResource("6_tr6es")
+position = Vector2(164, 239)
+texture = ExtResource("5_knmh5")
 
 [node name="BlackColorRect" type="ColorRect" parent="."]
 offset_left = 84.0

@@ -72,7 +72,10 @@ func place_block():
 			GameController.game_speed_multiplier += 0.2
 			var new_game_block_min = max(position.x, foundation_block.position.x)
 			var new_game_block_max = min(position.x + GameController.game_block_current_width, foundation_block.position.x + foundation_block.game_block_width)
-			GameController.game_block_current_width = new_game_block_max - new_game_block_min
+			if new_game_block_max - new_game_block_min < GameController.game_block_min_width:
+				GameController.game_block_current_width = GameController.game_block_min_width
+			else:
+				GameController.game_block_current_width = new_game_block_max - new_game_block_min
 		
 		GameController.game_block_spawn_y -= game_block_height
 		
@@ -121,7 +124,7 @@ func create_additional_game_screen():
 	new_game_screen.position.y = -GameController.game_height
 	new_game_screen.scroll = true
 	new_game_screen.scroll_to_max = 0
-	get_parent().add_child(new_game_screen)
+	get_parent().add_child(new_game_screen, true)
 	
 	var game_blocks = get_tree().get_nodes_in_group("game_block")
 	for block in game_blocks:

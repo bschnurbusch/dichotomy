@@ -22,6 +22,7 @@ var game_speed_base = 50
 var game_speed_multiplier = 1.000
 
 var game_block_current_width
+var game_block_min_width = 5
 var game_block_min_pos
 var game_block_max_pos
 
